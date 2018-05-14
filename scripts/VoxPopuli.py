@@ -119,8 +119,8 @@ class TweetCorpus:
             for tweetid in nonmatchingtweetids:
                 del self.tweets[tweetid]
 
-        for tweetid in self.tweets:
-            self.tweets[tweetid].getmatches()
+        #for tweetid in self.tweets:
+            #self.tweets[tweetid].getmatches()
             
         print(len(self.tweets))
     

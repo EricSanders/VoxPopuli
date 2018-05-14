@@ -56,9 +56,9 @@ partyerrorpatterns["denk"] =['aan\\s+denk',
 'denk\\s+wel'
                              ]
 
-'''
+
 testcorpus = VoxPopuli.TweetCorpusNonAnnotated()
-testcorpus.readgzfiles(firstdatehour='2011012016',lastdatehour='2011012016',pathname=tweetjsonfilesdir)
+testcorpus.readgzfiles(firstdatehour='2017031520',lastdatehour='2017031520',pathname=tweetjsonfilesdir)
 
 #userlocations = testcorpus.getuserlocations()
 #for userlocation in userlocations:
@@ -66,7 +66,9 @@ testcorpus.readgzfiles(firstdatehour='2011012016',lastdatehour='2011012016',path
 
 testcorpus.filteronpatterns(partypatterns,partyerrorpatterns,prepattern='(\s|\.|,|;|:|!|\?|\@|\#|^)',postpattern='(\s|\.|,|;|:|!|\?|$)',ignorecase=True,removemismatch=True)
 
-'''
+
+
+exit(0)
 
 testcorpus2 = VoxPopuli.TweetCorpusAnnotated()
 testcorpus2.readmysql(db1,'tweetid','')
